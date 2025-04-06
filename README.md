@@ -1,7 +1,7 @@
 <h1 align="center">🌐 Roteamento Estático usando CLI ⚙️</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen.svg" alt="Status do Projeto">
+  <img src="https://img.shields.io/badge/Status-Pendente-yellow.svg" alt="Status do Projeto">
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="Licença MIT">
   </a>
