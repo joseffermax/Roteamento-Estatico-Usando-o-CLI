@@ -84,8 +84,8 @@ Durante os testes, foi identificado um problema de conectividade entre um PC e o
 
 | Tipo | Arquivo | Descrição |
 |------|---------|-----------|
-| 📦 Cenário Packet Tracer | [RoteamentoEstatico.pkt](https://github.com/seuusuario/seurepositorio/blob/main/RoteamentoEstatico.pkt) | Arquivo de topologia com todas as configurações aplicadas |
-| 📄 Documentação | [Instruções.pdf](https://github.com/seuusuario/seurepositorio/blob/main/Instrucoes.pdf) | Etapas detalhadas de configuração e testes realizados |
+| 📦 Cenário Packet Tracer | [RoteamentoEstatico.pkt](https://academicoifpbedubr-my.sharepoint.com/:u:/g/personal/joseffer_maxwel_academico_ifpb_edu_br/EU0HEiyu9cNHugIqUe5MzlgB5USJ3dv2gfp6mvpAwtKc8g?e=BPwHpX) | Arquivo de topologia com todas as configurações aplicadas |
+| 📄 Documentação | [Instruções.pdf](https://academicoifpbedubr-my.sharepoint.com/:b:/g/personal/joseffer_maxwel_academico_ifpb_edu_br/EeCAutS-rbpJidMdLpGC0HwBj7tSCgqE0s4_8p-Hl25dIw?e=nJ01E9) | Etapas detalhadas de configuração e testes realizados |
 
 ---
 
