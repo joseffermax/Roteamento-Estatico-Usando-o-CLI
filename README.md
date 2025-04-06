@@ -1,95 +1,130 @@
-<h1 align="center">🌐 Roteamento estático usando o CLI ⚙️</h1>
+<h1 align="center">🌐 Roteamento Estático usando CLI ⚙️</h1>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen.svg" alt="Status do Projeto">
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="Licença MIT">
   </a>
 </p>
 
-## 🌍 Sobre o Projeto 💼
-  Este projeto demonstra a configuração de roteamento estático em roteadores Cisco, utilizando a interface de linha de comando (CLI). A prática ocorre em um ambiente simulado no Packet Tracer da Cisco, conectando os campos de Campina Grande e de João Pessoa através de roteadores, com uma conexão de longa distância.
+<p align="center">
+  Projeto prático desenvolvido para simular e configurar <strong>roteamento estático</strong> entre redes distintas usando o <strong>Cisco Packet Tracer</strong>, conectando os campi de <strong>Campina Grande</strong> e <strong>João Pessoa</strong> com uma conexão de longa distância.
+</p>
 
-## 📅 Cenário da Prática 🎮
+<p align="center">
+  <strong>📡 Roteamento entre redes, DHCP, DNS, Servidor Web e configuração completa via CLI!</strong>
+</p>
 
-Neste cenário de prática, exploramos a configuração de uma rede composta por:
+---
 
-### Equipamentos:
-- 4 PCs 💻
-- 1 Servidor 🌐
-- 1 Switch 2950-24 (com 24 portas) 🔄
-- 1 Roteador 2621XM 🖧
+## 🧠 Objetivo do Projeto
 
-**O objetivo é aprender sobre a configuração de rede e serviços relacionados em um ambiente simulado. 
+Este projeto tem como foco aplicar conhecimentos fundamentais sobre **roteamento estático**, **endereçamento IP**, e **serviços de rede** em um cenário simulado, usando a interface de linha de comando (CLI) dos roteadores Cisco.
 
-## 📑 Detalhes da Prática 📋
+---
 
-Durante esta prática, seguimos as seguintes etapas:
+## 🗽 Cenário e Topologia
 
-1. 🚀 **Configuração Inicial**:
-   - Iniciei conectando os dispositivos para criar a topologia da rede no Packet Tracer.
-   - Utilizei o software para estabelecer as conexões de acordo com o cenário proposto.
+A topologia contempla os seguintes dispositivos:
 
-2. 🌐 **Atribuição de Endereços Estáticos**:
-   - Atribuí manualmente endereços IP aos PCs e ao servidor para estabelecer a comunicação inicial.
-   - Configurei os IPs estáticos para garantir uma base sólida na rede.
+- 💻 4 PCs
+- 🌐 1 Servidor
+- 🛠️ 1 Switch 2950-24
+- 🧷 1 Roteador 2621XM
 
-3. 🔄 **Transição para DHCP**:
-   - Realizei a transição para permitir que os PCs obtivessem endereços IP dinamicamente via DHCP.
-   - Ativei o serviço DHCP nos dispositivos necessários, permitindo uma alocação automática de IPs.
+A topologia conecta duas redes distintas (representando os campi) utilizando **roteamento estático** para permitir a comunicação entre elas.
 
-4. ⚙ **Configuração do DHCP Server**:
-   - Configurei um servidor DHCP para automatizar a atribuição de IPs aos dispositivos.
-   - Verifiquei se os dispositivos recebiam corretamente os IPs designados pelo servidor.
+---
 
-5. 🌐 **Servidor Web**:
-   - Explorei e acessei um servidor web instalado no servidor, permitindo que os clientes navegassem em páginas web hospedadas.
-   - Certifiquei-me de que a conectividade estava estabelecida e que os clientes podiam acessar com sucesso o conteúdo do servidor web.
+## 🚀 Funcionalidades Implementadas
 
-6. 🛜 **Configuração do Servidor DNS**:
-   - Configurei um servidor DNS para associar nomes de domínio a endereços IP, facilitando o acesso dos clientes ao servidor web por meio de um nome de domínio.
-  
-7. 🖧 **Configuração dos Roteadores usando o CLI**:
-   - Implementei as configurações necessárias nos roteadores, estabelecendo rotas estáticas para facilitar a comunicação entre diferentes redes.
-   - Utilizei a interface de linha de comando (CLI) dos roteadores para realizar as configurações, incluindo a definição de interfaces, endereços IP e configuração de rotas estáticas.
+### 🔌 Configuração de Endereçamento IP
 
-## ❗Problema de Conectividade Atual 🚨
+- Endereços IPv4 atribuídos manualmente aos PCs e ao Servidor.
+- Testes de conectividade via `ping`.
 
-  Atualmente, enfrentamos um desafio em nossa rede simulada, onde a comunicação de ping de um PC para um servidor não está ocorrendo conforme esperado. Essa limitação pode resultar de diversas razões, e estou ativamente investigando para identificar e resolver o problema. 
-  É importante ressaltar que estou em um processo contínuo de aprendizado e aprimoramento de meus conhecimentos em redes de computadores. Este cenário específico oferece uma oportunidade valiosa para aprender com experiências práticas e solucionar questões reais.
+---
 
-## 🚀 Como Usar 🛠️
+### 🔄 DHCP
 
-1. Abra o software Packet Tracer em seu computador. 💻⚙️
+- Transição de IPs estáticos para dinâmicos usando servidor DHCP.
+- Configuração de pools separados para os dispositivos da rede.
 
-   - Clique no ícone do Packet Tracer na sua área de trabalho ou na barra de tarefas.
+---
 
-2. Carregue o arquivo de cenário fornecido neste repositório. 📂🗃️
+### 🌐 Servidor Web
 
-   - Clique em Arquivo > Abrir. Em seguida, navegue até o arquivo de cenário fornecido neste repositório e clique em Abrir.
+- Configuração de servidor com páginas HTML acessíveis via navegador dos PCs.
+- Testes de acesso à aplicação web hospedada localmente.
 
-3. Divirta-se explorando ou modificando a rede! 👨🏻‍💻😊
+---
 
-   - Agora, você está pronto para começar a explorar ou modificar a rede. 
+### 🧱 DNS
 
-## 🔧 Projeto e Recursos 📊
+- Configuração de servidor DNS para resolução de nomes.
+- Acesso ao servidor web via nome de domínio (e não apenas IP).
 
-- Cenários de configuração de rede. 🌐🔍
-- Recursos incluem o Packet Tracer (disponível no Cisco Networking Academy), PCs virtuais, Servidor, Switch virtual e Roteadores. 💼🔮
-  
-## 🤝 Contribuições 👊
+---
 
-1. Sugerir melhorias ou correções. 🛠️💡
-2. Compartilhar experiências ou insights sobre o aprendizado. 🗣️🤓
-3. Participar da discussão e ajudar a esclarecer dúvidas de outros aprendizes. 💬🙋
+### 🛀 Roteamento Estático via CLI
 
-## 📄 Licença 📃
+- Configuração completa utilizando o **modo de configuração global** e **interface**.
+- Criação de rotas estáticas para interligar as redes dos dois campi.
+- Verificação de conectividade usando comandos como `ping` e `traceroute`.
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes. 📜📤
+---
 
-## 📧 Contato 📫
+## 🚨 Desafio Ativo
 
-- Se você tiver alguma dúvida ou quiser saber mais sobre o projeto, sinta-se à vontade para entrar em contato através do meu;
-- 📧 Email: [joseffermax1472@gmail.com]
-- 🌐 GitHub: [https://github.com/joseffermax]
+Durante os testes, foi identificado um problema de conectividade entre um PC e o servidor. A comunicação via ping falha, e está sendo investigada como parte do processo de aprendizado e depuração de rede.
 
-Aproveite o aprendizado e divirta-se explorando o mundo das redes! 🎓🌐💡
+---
+
+## 📂 Arquivos Disponíveis
+
+| Tipo | Arquivo | Descrição |
+|------|---------|-----------|
+| 📦 Cenário Packet Tracer | [RoteamentoEstatico.pkt](https://github.com/seuusuario/seurepositorio/blob/main/RoteamentoEstatico.pkt) | Arquivo de topologia com todas as configurações aplicadas |
+| 📄 Documentação | [Instruções.pdf](https://github.com/seuusuario/seurepositorio/blob/main/Instrucoes.pdf) | Etapas detalhadas de configuração e testes realizados |
+
+---
+
+## 💻 Requisitos
+
+- [Cisco Packet Tracer](https://www.netacad.com/)
+
+> ⚠️ **Nota:** É necessário ter uma conta gratuita na Cisco Networking Academy para baixar e usar o simulador.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Cisco Packet Tracer
+- Roteamento Estático via CLI
+- DHCP
+- DNS
+- Servidor Web Local
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são sempre bem-vindas!  
+Se quiser sugerir melhorias, relatar problemas ou compartilhar ideias, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
+
+---
+
+## 📜 Licença
+
+Distribuído sob a Licença MIT. Veja o arquivo `LICENSE` para mais informações.
+
+---
+
+## 📬 Contato
+
+📧 Email: [joseffermax1472@gmail.com](mailto:joseffermax1472@gmail.com)  
+🔗 GitHub: [@joseffermax](https://github.com/joseffermax)
+
+---
+
+<h2 align="center">🧠 Explore, configure e domine o roteamento estático! 🚀</h2>
